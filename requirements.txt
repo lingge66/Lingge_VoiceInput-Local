@@ -1,0 +1,9 @@
+PyQt6>=6.5.0
+pyaudio>=0.2.11
+numpy>=1.24.0
+keyboard>=0.13.5
+pyperclip>=1.8.2
+pynput>=1.7.6
+funasr>=0.6.0
+modelscope>=1.9.0
+pyyaml>=6.0

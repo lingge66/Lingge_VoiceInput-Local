@@ -1,0 +1,12 @@
+# Voice Input 纯离线绿色版配置文件
+hotkey: "f8"                 # 全局触发键
+mic_device_index: null       # 麦克风设备索引（null=系统默认）
+sample_rate: 16000           # 采样率
+
+# 👇 核心改变：直接指向同级目录下的物理文件夹，彻底切断对 C 盘和网络的依赖！
+asr_model: "./models/iic/speech_seaco_paraformer_large_asr_nat-zh-cn-16k-common-vocab8404-pytorch" 
+vad_model: "./models/iic/speech_fsmn_vad_zh-cn-16k-common-pytorch"
+punc_model: "./models/iic/punc_ct-transformer_cn-en-common-vocab471067-large"
+
+device: "cpu"                # 纯 CPU 推理，不抢占你的 5070Ti 显存
+model_dir: "./models"        # 基础目录
